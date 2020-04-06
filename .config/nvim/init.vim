@@ -5,7 +5,7 @@
 "   \_/ |_|_| |_|_|\__|
 
 set nocompatible
-let mapleader = ","
+let mapleader = ";"
 
 "Plugins {
 filetype off

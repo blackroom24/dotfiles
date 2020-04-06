@@ -1,0 +1,12 @@
+# Defaults
+export EDITOR="nvim"
+export VISUAL="nvim"
+export BROWSER="chromium"
+export TERMINAL="kitty"
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export SOME="HELLO"
+# Cleanup
+export DOTFILES="$HOME/.config/dotfiles"
+export ZDOTDIR="$HOME/.config/zsh"
+export GTK2_RC_FILES="$HOME/.config/gtk-2.0/gtkrc-2.0"
+export GNUPGHOME="$HOME/.local/share/gnupg"
