@@ -1,0 +1,128 @@
+!! Transparency (0-1):
+/* *.alpha: 0.8 */
+
+!! Set a default font and font size as below:
+/* *.font: Source Code Pro:size=16 */
+
+/* name		dark	light */
+/* black	0	8 */
+/* red		1	9 */
+/* green	2	10 */
+/* yellow	3	11 */
+/* blue		4	12 */
+/* purple	5	13 */
+/* cyan		6	14 */
+/* white	7	15 */
+
+! Old new school
+*.foreground:   #66ff66
+*.background:   #101010
+*.cursorColor:  #66ff66
+*.color0:       #1c1c1c
+*.color8:       #4d4d4d
+*.color1:       #d81860
+*.color9:       #f00060
+*.color2:       #60ff60
+*.color10:      #70ff70
+*.color3:       #f9fd75
+*.color11:      #f9fd80
+*.color4:       #4695c8
+*.color12:      #5a9dc8
+*.color5:       #a78edb
+*.color13:      #b29fdb
+*.color6:       #43afce
+*.color14:      #69b8ce
+*.color7:       #f3ebe2
+*.color15:      #eeeeee
+
+! MATERIAL
+/* *background:                      #222D31 */
+/* *foreground:                      #d8d8d8 */
+/* *fading:                          8 */
+/* *fadeColor:                       black */
+/* *cursorColor:                     #1ABB9B */
+/* *pointerColorBackground:          #2B2C2B */
+/* *pointerColorForeground:          #16A085 */
+/* *color0:                          #222D31 */
+/* *color8:                          #585858 */
+/* *color1:                          #ab4642 */
+/* *color9:                          #ab4642 */
+/* *color2:                          #7E807E */
+/* *color10:                         #8D8F8D */
+/* *color3:                          #f7ca88 */
+/* *color11:                         #f7ca88 */
+/* *color4:                          #7cafc2 */
+/* *color12:                         #7cafc2 */
+/* *color5:                          #ba8baf */
+/* *color13:                         #ba8baf */
+/* *color6:                          #1ABB9B */
+/* *color14:                         #1ABB9B */
+/* *color7:                          #d8d8d8 */
+/* *color15:                         #f8f8f8 */
+
+
+/* !! gruvbox: */
+/* *.color0: #1d2021 */
+/* *.color1: #cc241d */
+/* *.color2: #98971a */
+/* *.color3: #d79921 */
+/* *.color4: #458588 */
+/* *.color5: #b16286 */
+/* *.color6: #689d6a */
+/* *.color7: #a89984 */
+/* *.color8: #928374 */
+/* *.color9: #fb4934 */
+/* *.color10: #b8bb26 */
+/* *.color11: #fabd2f */
+/* *.color12: #83a598 */
+/* *.color13: #d3869b */
+/* *.color14: #8ec07c */
+/* *.color15: #ebdbb2 */
+/* *.color256: #1d2021 */
+/* *.color257: #ebdbb2 */
+
+
+/* !! solarized */
+/* *.color0:	#073642 */
+/* *.color1:	#dc322f */
+/* *.color2:	#859900 */
+/* *.color3:	#b58900 */
+/* *.color4:	#268bd2 */
+/* *.color5:	#d33682 */
+/* *.color6:	#2aa198 */
+/* *.color7:	#eee8d5 */
+/* *.color9:	#cb4b16 */
+/* *.color8:	#fdf6e3 */
+/* *.color10:	#586e75 */
+/* *.color11:	#657b83 */
+/* *.color12:	#839496 */
+/* *.color13:	#6c71c4 */
+/* *.color14:	#93a1a1 */
+/* *.color15:	#fdf6e3 */
+
+/* ! Dracula Xresources palette */
+/* *.foreground: #F8F8F2 */
+/* *.background: #282A36 */
+/* *.color0:     #000000 */
+/* *.color8:     #4D4D4D */
+/* *.color1:     #FF5555 */
+/* *.color9:     #FF6E67 */
+/* *.color2:     #50FA7B */
+/* *.color10:    #5AF78E */
+/* *.color3:     #F1FA8C */
+/* *.color11:    #F4F99D */
+/* *.color4:     #BD93F9 */
+/* *.color12:    #CAA9FA */
+/* *.color5:     #FF79C6 */
+/* *.color13:    #FF92D0 */
+/* *.color6:     #8BE9FD */
+/* *.color14:    #9AEDFE */
+/* *.color7:     #BFBFBF */
+/* *.color15:    #E6E6E6 */
+
+/* *.background: .color0 */
+/* *.color256: 0#1d2021 */
+/* *.color257: 15#ebdbb2 */
+
+Xcursor.theme: xcursor-breeze
+Xcursor.size:                     0

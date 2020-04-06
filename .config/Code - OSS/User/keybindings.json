@@ -1,0 +1,50 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "Meta+alt+k",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "escape",
+        "command": "workbench.action.output.toggleOutput",
+        "when": "inOutput"
+    },
+    {
+        "key": "alt+y",
+        "command": "redo",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "Meta+alt+z",
+        "command": "workbench.action.toggleZenMode"
+    },
+    {
+        "key": "Meta+alt+z",
+        "command": "workbench.action.exitZenMode",
+        "when": "inZenMode"
+    },
+    {
+        "key": "escape escape",
+        "command": "-workbench.action.exitZenMode",
+        "when": "inZenMode"
+    },
+    {
+        "key": "ctrl+alt+down",
+        "command": "editor.action.moveLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+up",
+        "command": "editor.action.moveLinesUpAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "editor.action.toggleWordWrap"
+    },
+]
