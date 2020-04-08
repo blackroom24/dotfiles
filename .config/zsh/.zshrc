@@ -36,21 +36,6 @@ _comp_options+=(globdots)
 # ZSH keybinds
 bindkey -e 
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/blackroom24/.local/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/blackroom24/.local/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/blackroom24/.local/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/blackroom24/.local/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 # Plugins
 #autojump
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh

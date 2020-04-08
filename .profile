@@ -4,8 +4,12 @@ export VISUAL="nvim"
 export BROWSER="chromium"
 export TERMINAL="kitty"
 export QT_QPA_PLATFORMTHEME="qt5ct"
-# Android
-export ANDROID_SDK_ROOT=$HOME/dev/android/sdk
+# Android Specific
+export ANDROID_HOME="$HOME/dev/android/sdk"
+export ANDROID_SDK_ROOT="$ANDROID_HOME"
+export PATH="$ANDROID_HOME/emulator:$PATH"
+export PATH="$ANDROID_HOME/platform-tools:$PATH"
+export PATH="$ANDROID_HOME/cmdline-tools/latest/bin:$PATH"
 # Cleanup
 export DOTFILES="$HOME/.config/dotfiles"
 export ZDOTDIR="$HOME/.config/zsh"
