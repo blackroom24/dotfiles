@@ -4,7 +4,8 @@ export VISUAL="nvim"
 export BROWSER="chromium"
 export TERMINAL="kitty"
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export SOME="HELLO"
+# Android
+export ANDROID_SDK_ROOT=$HOME/dev/android/sdk
 # Cleanup
 export DOTFILES="$HOME/.config/dotfiles"
 export ZDOTDIR="$HOME/.config/zsh"
