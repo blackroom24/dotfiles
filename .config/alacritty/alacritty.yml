@@ -30,18 +30,18 @@ scrolling:
 # Font configuration
 font:
   normal:
-    family: Mononoki
+    family: Source Code Variable
     style: Regular
   bold:
-    family: Mononoki
+    family: Source Code Variable
     style: Bold
   italic:
-    family: Mononoki
+    family: Source Code Variable
     style: Italic
   bold_italic:
-    family: Mononoki
+    family: Source Code Variable
     style: Bold Italic
-  size: 12.0
+  size: 11.0
   offset:
     x: 1
     y: 1
@@ -68,19 +68,19 @@ colors:
     red:     '0xf07178' #1
     green:   '0xc3e88d' #2
     yellow:  '0xffcb6b' #3
-    blue:    '0x82aaff'  
-    magenta: '0xc792ea'
-    cyan:    '0x89ddff'
-    white:   '0xd0d0d0'
+    blue:    '0x82aaff' #4
+    magenta: '0xc792ea' #5
+    cyan:    '0x89ddff' #6
+    white:   '0xd0d0d0' #7
   bright:
-    black:   '0x434758'
-    red:     '0xff8b92'
-    green:   '0xddffa7'
-    yellow:  '0xffe585'
-    blue:    '0x9cc4ff'
-    magenta: '0xe1acff'
-    cyan:    '0xa3f7ff'
-    white:   '0xffffff'
+    black:   '0x434758' #8
+    red:     '0xff8b92' #9
+    green:   '0xddffa7' #10
+    yellow:  '0xffe585' #11
+    blue:    '0x9cc4ff' #12
+    magenta: '0xe1acff' #13
+    cyan:    '0xa3f7ff' #14
+    white:   '0xffffff' #15
   #dim:
   #  black:   '0x000000'
   #  red:     '0x8c3336'
