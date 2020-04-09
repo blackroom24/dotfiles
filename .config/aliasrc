@@ -40,8 +40,8 @@ alias \
     aliasrc='$EDITOR $HOME/.config/aliasrc' \
     zshrc='$EDITOR $HOME/.config/zsh/.zshrc' \
     vinit='$EDITOR $HOME/.config/nvim/init.vim' \
-    rebash='$EDITOR $HOME/.config/.bash_profile' \
-    dot='git --git-dir=$DOTFILES/ --work-tree=$HOME' \
+    rebash='$EDITOR $HOME/.config/.bashrc' \
+    cfg='git --git-dir=$DOTFILES/ --work-tree=$HOME' \
     tmux='tmux -f $HOME/.config/tmux/tmux.conf' \
 
 # Not safe
