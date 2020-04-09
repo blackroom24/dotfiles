@@ -1,0 +1,5 @@
+#! /bin/bash
+
+ANDROID_STUDIO_PATH="$HOME/.local/opt/android-studio"
+
+"$ANDROID_STUDIO_PATH/bin/studio.sh"
