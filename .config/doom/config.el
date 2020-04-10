@@ -5,7 +5,7 @@
 (setq doom-theme 'doom-city-lights)
 
 ;; setting org directory
-(setq org-directory "~/org/")
+(setq org-directory "~/.config/org/")
 
 ;; setting lines
 (setq display-line-numbers-type 'relative)
