@@ -41,6 +41,7 @@ fi
 # daemons
 dunst & # notifications
 unclutter & # hides cursor when not needed
+compton &
 
 get_session(){
 	local dbus_args=(--sh-syntax --exit-with-session)
