@@ -1,7 +1,14 @@
 [[ $- != *i* ]] && return
-
 HISTFILE=$HOME/.cache/bash_history
-[ -n "$PS1" ] && source $HOME/.config/.bash_profile
 
+if [ -n "$PS1" ]; then
+    for file in ~/.config/{bash_prompt,aliasrc}; do
+        [ -r "$file" ] && [ -f "$file" ] && source "$file";
+    done
+    unset file;
+fi
+
+# Bash with attitude
 [ -f /etc/bash.command-not-found ] && source /etc/bash.command-not-found
-
+# Auto Jump
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
