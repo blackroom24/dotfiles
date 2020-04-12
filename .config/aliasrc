@@ -1,16 +1,3 @@
-function add_key {
-    eval "$(ssh-agent -s)"
-    ssh-add ~/.ssh/id_github04
-    ssh-add ~/.ssh/id_gitlab04
-}
-
-if [ $SSH_AGENT_PID > /dev/null ]; then
-    echo "key already added"
-    ssh-add -l
-else
-    add_key
-fi
-
 # Put some color in life
 alias \
 	ls="exa --color=always --group-directories-first" \

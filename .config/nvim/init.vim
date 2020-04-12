@@ -40,6 +40,7 @@ filetype plugin indent on
 set background=dark
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme = 'molokai'
+let g:airline_powerline_fonts = 1
 colorscheme predawn
 set termguicolors
 "}

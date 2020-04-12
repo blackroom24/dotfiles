@@ -1,5 +1,8 @@
 [[ $- != *i* ]] && return
+
 HISTFILE=$HOME/.cache/bash_history
+HISTCONTROL=ignoreboth
+shopt -s histappend
 
 if [ -n "$PS1" ]; then
     for file in ~/.config/{bash_prompt,aliasrc}; do
