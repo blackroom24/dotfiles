@@ -11,7 +11,6 @@ let mapleader = ";"
 filetype off
 call plug#begin()
 "Essentials
-Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
@@ -25,6 +24,7 @@ Plug 'kana/vim-textobj-user'
 Plug 'kana/vim-textobj-entire'
 Plug 'kana/vim-textobj-line'
 "UI
+Plug 'ryanoasis/vim-devicons'
 Plug 'blackroom24/predawn.vim'
 Plug 'yggdroot/indentline'
 Plug 'vim-airline/vim-airline'
@@ -131,5 +131,4 @@ noremap P :bp <CR>
 noremap <leader><tab> :b#<CR>
 noremap <leader>d :bd <CR>
 noremap <leader>bb :buffers <CR>:b<space>
-noremap <leader>n :NERDTreeToggle <CR>
 " }
