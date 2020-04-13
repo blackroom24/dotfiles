@@ -6,74 +6,129 @@ Xcursor.size: 0
 /* st.alpha: 0.85 */
 
 !! Set a default font and font size as below:
-/* st.font: DejaVu Sans Mono:pixelsize=20 */
+/* st.font:Mononoki Nerd Font:pixelsize=20 */
 
-/* name		dark	light */
-/* black	0	8 */
-/* red		1	9 */
-/* green	2	10 */
-/* yellow	3	11 */
-/* blue		4	12 */
-/* purple	5	13 */
-/* cyan		6	14 */
-/* white	7	15 */
+/* ! Half Life */
+/* #define bg #181818 */
+/* #define fg #767b6f */
+/* #define cs        #c7c7c7 */
+/* #define hicol     #c1ddff */
+/* #define hitexcol  #000000 */
+/* !black */
+/* #define col0 #4a4131 */
+/* #define col8 #4b4131 */
+/* !red */
+/* #define col1 #cb712a */
+/* #define col9 #cb712a */
+/* !green */
+/* #define col2 #cc7c34 */
+/* #define col10 #cc7c34 */
+/* !yellow */
+/* #define col3 #c38e45 */
+/* #define col11 #c38e45 */
+/* !blue */
+/* #define col4 #767b6f */
+/* #define col12 #767b6f */
+/* !purple */
+/* #define col5 #9fafaf */
+/* #define col13 #abbcbc */
+/* !cyan */
+/* #define col6 #86a3a4 */
+/* #define col14 #87a4a5 */
+/* !white */
+/* #define col7 #cad7ca */
+/* #define col15 #cad7ca */
 
-! Old new school
-*.foreground:   #66ff66
-*.background:   #101010
-*.cursorColor:  #66ff66
-*.color0:       #1c1c1c
-*.color8:       #4d4d4d
-*.color1:       #d81860
-*.color9:       #f00060
-*.color2:       #60ff60
-*.color10:      #70ff70
-*.color3:       #f9fd75
-*.color11:      #f9fd80
-*.color4:       #4695c8
-*.color12:      #5a9dc8
-*.color5:       #a78edb
-*.color13:      #b29fdb
-*.color6:       #43afce
-*.color14:      #69b8ce
-*.color7:       #f3ebe2
-*.color15:      #eeeeee
+/* ! t1h */
+/* #define bg #101010 */
+/* #define fg #66ff66 */
+/* #define cs #66ff66 */
+/* !black */
+/* #define col0 #1c1c1c */
+/* #define col8 #4d4d4d */
+/* !red */
+/* #define col1 #d81860 */
+/* #define col9 #f00060 */
+/* !green */
+/* #define col2  #60ff60 */
+/* #define col10 #70ff70 */
+/* !yellow */
+/* #define col3  #f9fd75 */
+/* #define col11 #f9fd80 */
+/* !blue */
+/* #define col4  #4695c8 */
+/* #define col12 #5a9dc8 */
+/* !purple */
+/* #define col5  #a78edb */
+/* #define col13 #b29fdb */
+/* !cyan */
+/* #define col6  #43afce */
+/* #define col14 #69b8ce */
+/* !white */
+/* #define col7  #f3ebe2 */
+/* #define col15 #eeeeee */
+/* #define hicol     #c1ddff */
+/* #define hitexcol  #000000 */
 
-/* Gruvbox Dark */
-/* *.color0: #1d2021 */
-/* *.color1: #cc241d */
-/* *.color2: #98971a */
-/* *.color3: #d79921 */
-/* *.color4: #458588 */
-/* *.color5: #b16286 */
-/* *.color6: #689d6a */
-/* *.color7: #a89984 */
-/* *.color8: #928374 */
-/* *.color9: #fb4934 */
-/* *.color10: #b8bb26 */
-/* *.color11: #fabd2f */
-/* *.color12: #83a598 */
-/* *.color13: #d3869b */
-/* *.color14: #8ec07c */
-/* *.color15: #ebdbb2 */
-/* *.color256: #1d2021 */
-/* *.color257: #ebdbb2 */
+! solarized.dark
+#define bg  #002b36
+#define fg  #93a1a1
+#define cs  #93a1a1
+!black
+#define col0 #002b36
+#define col8 #657b83
+!red
+#define col1 #dc322f
+#define col9 #dc322f
+!green
+#define col2  #859900
+#define col10 #859900
+!yellow
+#define col3  #b58900
+#define col11 #b58900
+!blue
+#define col4   #268bd2
+#define col12  #268bd2
+!purple
+#define col5  #6c71c4
+#define col13 #6c71c4
+!cyan
+#define col6  #2aa198
+#define col14 #2aa198
+!white
+#define col7   #93a1a1
+#define col15  #fdf6e3
+#define hicol     #c1ddff
+#define hitexcol  #000000
 
 
-/* !! solarized */
-/* *.color0:	#073642 */
-/* *.color1:	#dc322f */
-/* *.color2:	#859900 */
-/* *.color3:	#b58900 */
-/* *.color4:	#268bd2 */
-/* *.color5:	#d33682 */
-/* *.color6:	#2aa198 */
-/* *.color7:	#eee8d5 */
-/* *.color9:	#cb4b16 */
-/* *.color8:	#fdf6e3 */
-/* *.color10:	#586e75 */
-/* *.color11:	#657b83 */
-/* *.color12:	#839496 */
-/* *.color13:	#6c71c4 */
-/* *.color14:	#93a1a1 */
-/* *.color15:	#fdf6e3 */
+*.background: bg
+*.foreground: fg
+
+*.cursorColor: cs
+*.highlightColor: hicol
+*.highlightTextColor: hitexcol
+
+*.color0: col0
+*.color8: col8
+
+*.color1: col1
+*.color9: col9
+
+*.color2: col2
+*.color10: col10
+
+*.color3: col3
+*.color11: col11
+
+*.color4: col4
+*.color12: col12
+
+*.color5: col5
+*.color13: col13
+
+*.color6: col6
+*.color14: col14
+
+*.color7: col7
+*.color15: col15
