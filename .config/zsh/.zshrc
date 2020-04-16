@@ -1,7 +1,7 @@
-#          _              
-#  _______| |__  _ __ ___ 
+#          _
+#  _______| |__  _ __ ___
 # |_  / __| '_ \| '__/ __|
-#  / /\__ \ | | | | | (__ 
+#  / /\__ \ | | | | | (__
 # /___|___/_| |_|_|  \___|
 
 # Sanitization
@@ -15,7 +15,6 @@ setopt autocd
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 # Secrets
 [ -f "$HOME/.local/private" ] && source "$HOME/.local/private"
-
 #  Prompt
 fpath+=$ZDOTDIR/pure
 autoload -U promptinit; promptinit
@@ -36,7 +35,7 @@ compinit -d $HOME/.cache/zsh/zcompdump-$ZSH_VERSION
 _comp_options+=(globdots)
 
 # ZSH keybinds
-bindkey -e 
+bindkey -e
 
 # Plugins and settings
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'

@@ -1,7 +1,7 @@
 [[ $- != *i* ]] && return
 
-HISTFILE=$HOME/.cache/bash_history
 HISTCONTROL=ignoreboth
+HISTFILE=$HOME/.cache/bash_history
 shopt -s histappend
 
 if [ -n "$PS1" ]; then

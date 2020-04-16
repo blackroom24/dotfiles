@@ -17,6 +17,8 @@ eval "$(dircolors "${XDG_CONFIG_HOME:-$HOME/.config}"/dircolors)"
 # App settings
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 export PYTHONSTARTUP="${XDG_CONFIG_HOME:-$HOME/.config}/python/pythonstartup.py"
+export LESS=-R
+export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export LESS_TERMCAP_mb="$(printf '%b' '[1;31m')"
 export LESS_TERMCAP_md="$(printf '%b' '[1;36m')"
 export LESS_TERMCAP_me="$(printf '%b' '[0m')"
