@@ -1,47 +1,35 @@
-#          _
-#  _______| |__  _ __ ___
-# |_  / __| '_ \| '__/ __|
-#  / /\__ \ | | | | | (__
-# /___|___/_| |_|_|  \___|
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
 
-# Sanitization
+# Path to your oh-my-zsh installation.
+export ZSH="/home/blackroom24/.config/zsh/oh-my-zsh"
 
-autoload -U colors && colors
-PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
-
-setopt autocd
-
-# Aliasrc
-[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
-# Secrets
-[ -f "$HOME/.local/private" ] && source "$HOME/.local/private"
-#  Prompt
-fpath+=$ZDOTDIR/pure
-autoload -U promptinit; promptinit
-prompt pure
+ZSH_THEME="agnoster"
+# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # History in cache directory:
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
 
-# Basic auto/tab complete:
-autoload -U compinit
-zstyle ':completion:*' menu select
-zmodload zsh/complist
-compinit -d $HOME/.cache/zsh/zcompdump-$ZSH_VERSION
+# Plugins
+plugins=(git)
 
-# Include Hidden files
-_comp_options+=(globdots)
+source $ZSH/oh-my-zsh.sh
+# Plugin Variables
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
+# User configuration
+# export MANPATH="/usr/local/man:$MANPATH"
 
-# ZSH keybinds
-bindkey -e
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
 
-# Plugins and settings
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=5'
-# Install manualy or AUR
-[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
-[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ] \
-    && source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] \
-    && source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='vim'
+# else
+#   export EDITOR='nvim'
+# fi
+# Aliasrc
+[ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
+# Secrets
+[ -f "$HOME/.local/private" ] && source "$HOME/.local/private"

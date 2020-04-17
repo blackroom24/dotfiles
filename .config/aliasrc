@@ -7,7 +7,7 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
 
-# I am Lazy so what 
+# I am Lazy so what
 alias \
     e='$EDITOR' \
     v='$EDITOR' \
@@ -21,15 +21,14 @@ alias \
     free='free -m' \
     regen='sudo pacman-mirrors --fasttrack' \
     pac='sudo pacman' \
+    pkgs='pacman -Q | less'
 
 # Ease of life
 alias \
     aliasrc='$EDITOR $HOME/.config/aliasrc' \
-    zshrc='$EDITOR $HOME/.config/zsh/.zshrc' \
     vinit='$EDITOR $HOME/.config/nvim/init.vim' \
     rebash='$EDITOR $HOME/.config/.bashrc' \
     cfg='git --git-dir=$DOTFILES/ --work-tree=$HOME' \
-    tmux='tmux -f $HOME/.config/tmux/tmux.conf' \
 
 # Not safe
 alias \
