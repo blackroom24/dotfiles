@@ -27,7 +27,8 @@ alias \
 alias \
     aliasrc='$EDITOR $HOME/.config/aliasrc' \
     vinit='$EDITOR $HOME/.config/nvim/init.vim' \
-    rebash='$EDITOR $HOME/.config/.bashrc' \
+    rebash='$EDITOR $HOME/.bashrc' \
+    zshrc='$EDITOR $ZDOTDIR/.zshrc' \
     cfg='git --git-dir=$DOTFILES/ --work-tree=$HOME' \
 
 # Not safe
