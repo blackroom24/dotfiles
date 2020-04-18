@@ -4,8 +4,7 @@
 #  / /\__ \ | | | | | (__
 # /___|___/_| |_|_|  \___|
 
-# Sanitization
-
+#Sanitization
 autoload -U colors && colors
 PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
@@ -20,13 +19,7 @@ fpath+=$ZDOTDIR/pure
 autoload -U promptinit; promptinit
 prompt pure
 
-# autoload -Uz add-zsh-hook
-# prompt_mimir_cmd() { /path/to/mimir }
-# add-zsh-hook precmd prompt_mimir_cmd
-
-# prompt_symbol='❯'
-# PROMPT="%(?.%F{magenta}.%F{red})${prompt_symbol}%f "
-# History in cache directory:
+# History
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.cache/zsh/history
