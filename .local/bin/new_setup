@@ -1,0 +1,8 @@
+#!/bin/bash
+DOTFILES="$HOME/.config/dotfiles"
+git clone --bare https://github.com/blackroom24/Dotfiles.git $DOTFILES
+function config {
+   /usr/bin/git --git-dir=$DOTFILES --work-tree=$HOME $@
+}
+config checkout -f
+config config status.showUntrackedFiles no

@@ -1,0 +1,14 @@
+[Added Associations]
+x-scheme-handler/http=chromium.desktop;
+x-scheme-handler/https=chromium.desktop;
+inode/directory=pcmanfm.desktop;
+x-scheme-handler/trash=pcmanfm.desktop;
+application/x-desktop=vim.desktop;
+image/jpeg=viewnior.desktop;
+image/gif=viewnior.desktop;
+image/png=viewnior.desktop;
+
+[Default Applications]
+image/jpeg=viewnior.desktop
+image/gif=viewnior.desktop
+image/png=viewnior.desktop

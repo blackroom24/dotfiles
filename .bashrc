@@ -1,3 +1,6 @@
+#
+# ~/.bashrc
+#
 [[ $- != *i* ]] && return
 
 HISTCONTROL=ignoreboth
@@ -10,7 +13,6 @@ if [ -n "$PS1" ]; then
     done
     unset file;
 fi
-
 # Bash with attitude
 [ -f /etc/bash.command-not-found ] && source /etc/bash.command-not-found
 # Auto Jump

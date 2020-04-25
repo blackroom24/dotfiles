@@ -25,9 +25,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'kana/vim-textobj-line'
 " ui specific
     Plug 'ayu-theme/ayu-vim' " used when i am edgy
-    Plug 'xdefrag/vim-beelzebub' " disable termguicolors used with th1 term
     " Plug 'rakr/vim-one' " used by onehalfdark term
-    Plug 'lifepillar/vim-solarized8' " used with solarized term
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
@@ -73,7 +71,7 @@ if (empty($TMUX))
     endif
 endif
 set background=dark
-colorscheme solarized8_flat
+colorscheme ayu
 set cursorline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

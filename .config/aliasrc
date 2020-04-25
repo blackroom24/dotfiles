@@ -1,3 +1,4 @@
+#!/bin/sh
 # Put some color in life
 alias \
 	ls="exa --color=always --group-directories-first" \
@@ -6,21 +7,28 @@ alias \
 	lt="exa -aT --color=always --group-directories-first" \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
+    cp='cp -iv' \
+    rm='rm -iv' \
+    mv='mv -iv' \
+    mkdir='mkdir -pv' \
+    more='less' \
+    vi='vim' \
+    df='df -h' \
+    free='free -m' \
+    wget='wget -c' \
 
 # I am Lazy so what
 alias \
     e='$EDITOR' \
     v='$EDITOR' \
-    cp='cp -iv' \
-    rm='rm -iv' \
-    mv='mv -iv' \
-    mkd='mkdir -pv' \
-    more='less' \
-    vi='vim' \
-    df='df -h' \
-    free='free -m' \
-    regen='sudo pacman-mirrors --fasttrack' \
-    pac='sudo pacman' \
+    pi='sudo pacman -Syu' \
+    yi='yay -Syu' \
+    prs='sudo pacman -Rs' \
+    yrs='yay -Rs' \
+    pq='sudo pacman -Ss' \
+    yq='yay -Ss' \
+    prm='sudo pacman -R' \
+    yrm='yay -R' \
     pkgs='pacman -Q | less'
 
 # Ease of life
@@ -29,10 +37,17 @@ alias \
     vinit='$EDITOR $HOME/.config/nvim/init.vim' \
     rebash='$EDITOR $HOME/.bashrc' \
     zshrc='$EDITOR $ZDOTDIR/.zshrc' \
-    cfg='git --git-dir=$DOTFILES/ --work-tree=$HOME' \
+    cfg='git --git-dir=$HOME/.config/dotfiles --work-tree=$HOME' \
 
 # Not safe
 alias \
     nuke='rm -rf' \
     sdn='poweroff' \
-    rbt='reboot' \
+    rbt='reboot'
+
+mcd() {
+    mkdir -pv $1
+    cd $1
+}
+maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
+makezip() { zip -r "${1%%/}.zip" "$1" ; }
