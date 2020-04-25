@@ -29,6 +29,7 @@ alias \
     yq='yay -Ss' \
     prm='sudo pacman -R' \
     yrm='yay -R' \
+    yc='yay -Sc' \
     pkgs='pacman -Q | less'
 
 # Ease of life

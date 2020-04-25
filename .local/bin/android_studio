@@ -1,5 +1,1 @@
-#! /bin/bash
-
-ANDROID_STUDIO_PATH="$HOME/.local/opt/android-studio"
-
-"$ANDROID_STUDIO_PATH/bin/studio.sh"
+/home/blackroom24/.local/opt/android-studio/bin/studio.sh

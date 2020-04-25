@@ -16,7 +16,7 @@
     <menu id="2" label="DevKit">
       <item label="AndroidStudio">
         <action name="Execute">
-          <execute>~/.local/opt/android-studio/bin/studio.sh</execute>
+          <execute>android_studio</execute>
         </action>
       </item>
     </menu>
