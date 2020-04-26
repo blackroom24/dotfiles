@@ -12,3 +12,5 @@ usermodmap=$HOME/.config/X11/Xmodmap
 [ -f "$usermodmap" ] && xmodmap "$usermodmap"
 
 exec openbox-session
+# exec dwm
+# exec awesome
