@@ -1,46 +1,70 @@
 ! Xcursor theme and size
-Xcursor.theme: xcursor-breeze
+Xcursor.theme: Breeze
 Xcursor.size: 0
 
-!! Transparency(0-1):
-/* st.alpha: 0.85 */
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
 
-!! Set a default font and font size as below:
-/* st.font:Mononoki Nerd Font:pixelsize=20 */
 
-! special
-*.foreground:   #93a1a1
-*.background:   #002b36
-*.cursorColor:  #93a1a1
+XTerm*renderFont: true
+XTerm*faceName: xft:Mononoki Nerd Font
+XTerm*faceSize: 12
+XTerm*utf8: 2
+XTerm*locale: true
+XTerm.vt100.translations: #override \n\
+    Ctrl <Key> j: smaller-vt-font() \n\
+    Ctrl <Key> k: larger-vt-font()
+XTerm*loginshell: true
+XTerm*savelines: 16384
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+XTerm*foreground: #bbc5ff
+XTerm*background: #292d3e
+XTerm*cursorColor: #bbc5ff
+
+UXTerm*renderFont: true
+UXTerm*faceName: xft:Mononoki Nerd Font
+UXTerm*faceSize: 12
+UXTerm*utf8: 2
+UXTerm*locale: true
+UXTerm.vt100.translations: #override \n\
+    Ctrl <Key> j: smaller-vt-font() \n\
+    Ctrl <Key> k: larger-vt-font()
+UXTerm*loginshell: true
+UXTerm*savelines: 16384
+UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+UXTerm*foreground: #bbc5ff
+UXTerm*background: #292d3e
+UXTerm*cursorColor: #bbc5ff
+
 
 ! black
-*.color0:       #002b36
-*.color8:       #657b83
-
+*.color0:       #101010
+*.color8:       #434758
 ! red
-*.color1:       #dc322f
-*.color9:       #dc322f
-
+*.color1:       #f07178
+*.color9:       #ff8b92
 ! green
-*.color2:       #859900
-*.color10:      #859900
-
+*.color2:       #c3e88d
+*.color10:      #ddffa7
 ! yellow
-*.color3:       #b58900
-*.color11:      #b58900
-
+*.color3:       #ffcb6b
+*.color11:      #ffe585
 ! blue
-*.color4:       #268bd2
-*.color12:      #268bd2
-
+*.color4:       #82aaff
+*.color12:      #9cc4ff
 ! magenta
-*.color5:       #6c71c4
-*.color13:      #6c71c4
-
+*.color5:       #c792ea
+*.color13:      #e1acff
 ! cyan
-*.color6:       #2aa198
-*.color14:      #2aa198
-
+*.color6:       #89ddff
+*.color14:      #a3f7ff
 ! white
-*.color7:       #93a1a1
-*.color15:      #fdf6e3
+*.color7:       #d0d0d0
+*.color15:      #ffffff
