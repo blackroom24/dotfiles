@@ -1,0 +1,5 @@
+#!/bin/sh
+exec xautolock -detectsleep \
+  -time 10 -locker "systemctl suspend" \
+  -notify 30 \
+  -notifier "notify-send -t 1500 -- 'LOCKING screen in 30 seconds'"

@@ -31,7 +31,7 @@ case $chosen in
         ;;
     $suspend)
         amixer set Master mute
-        betterlockscreen -s
+        sytemctl suspend
         ;;
     $logout)
         openbox --exit
