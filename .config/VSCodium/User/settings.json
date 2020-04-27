@@ -38,4 +38,5 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.configuration.checkProjectSettingsExclusions": false,
     "workbench.colorTheme": "Ayu Dark",
+    "explorer.confirmDelete": false,
 }
