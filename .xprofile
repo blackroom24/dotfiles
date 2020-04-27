@@ -1,0 +1,9 @@
+#!/bin/sh
+nitrogen --restore &
+# compton &
+# dunst &
+# opensnap &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+unclutter &
+xset r rate 300 50 &
+autolock &
