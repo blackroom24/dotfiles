@@ -1,6 +1,7 @@
 #
 # ~/.bashrc
 #
+
 [[ $- != *i* ]] && return
 
 HISTCONTROL=ignoreboth

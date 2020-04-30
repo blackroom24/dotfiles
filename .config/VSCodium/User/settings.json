@@ -37,6 +37,14 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.configuration.checkProjectSettingsExclusions": false,
-    "workbench.colorTheme": "Ayu Dark",
     "explorer.confirmDelete": false,
-}
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false
+    },
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.ignorecase": false,
+    "workbench.colorTheme": "Ayu Dark",
+    "editor.lineNumbers": "relative",
