@@ -92,7 +92,7 @@ augroup line_return
                 \endif
 augroup END
 " Reloads xresources and xdefaults
-autocmd VimLeave *Xresources,*Xdefaults !xrdb %
+autocmd BufWritePre *Xresources,*Xdefaults !xrdb %
 " Removes comments on new line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Removes trailing whitespaces

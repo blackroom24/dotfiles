@@ -1,8 +1,7 @@
-! Dracula
 ! Xcursor theme and size
 Xcursor.theme: Breeze
 Xcursor.size: 0
-
+! font settings
 Xft.dpi: 96
 Xft.antialias: true
 Xft.hinting: true
@@ -10,62 +9,9 @@ Xft.rgba: rgb
 Xft.autohint: true
 Xft.hintstyle: hintfull
 Xft.lcdfilter: lcdfilter
-
-
-XTerm*renderFont: true
-XTerm*faceName: xft:Mononoki Nerd Font
-XTerm*faceSize: 12
-XTerm*utf8: 2
-XTerm*locale: true
-XTerm.vt100.translations: #override \n\
-    Ctrl <Key> j: smaller-vt-font() \n\
-    Ctrl <Key> k: larger-vt-font()
-XTerm*loginshell: true
-XTerm*savelines: 16384
-XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-
-XTerm*foreground: #bbc5ff
-XTerm*background: #292d3e
-XTerm*cursorColor: #bbc5ff
-
-UXTerm*renderFont: true
-UXTerm*faceName: xft:Mononoki Nerd Font
-UXTerm*faceSize: 12
-UXTerm*utf8: 2
-UXTerm*locale: true
-UXTerm.vt100.translations: #override \n\
-    Ctrl <Key> j: smaller-vt-font() \n\
-    Ctrl <Key> k: larger-vt-font()
-UXTerm*loginshell: true
-UXTerm*savelines: 16384
-UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
-
-UXTerm*foreground: #bbc5ff
-UXTerm*background: #292d3e
-UXTerm*cursorColor: #bbc5ff
-
-
-! black
-*.color0:       #101010
-*.color8:       #434758
-! red
-*.color1:       #f07178
-*.color9:       #ff8b92
-! green
-*.color2:       #c3e88d
-*.color10:      #ddffa7
-! yellow
-*.color3:       #ffcb6b
-*.color11:      #ffe585
-! blue
-*.color4:       #82aaff
-*.color12:      #9cc4ff
-! magenta
-*.color5:       #c792ea
-*.color13:      #e1acff
-! cyan
-*.color6:       #89ddff
-*.color14:      #a3f7ff
-! white
-*.color7:       #d0d0d0
-*.color15:      #ffffff
+!xterm settings
+#include</home/blackroom24/.config/X11/app/xterm/drac>
+! colors loaded
+#include</home/blackroom24/.config/X11/colors/drac>
+! dmenu settings
+#include</home/blackroom24/.config/X11/app/dmenu/drac>
