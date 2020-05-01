@@ -46,5 +46,7 @@
     "vim.incsearch": true,
     "vim.hlsearch": true,
     "vim.ignorecase": false,
-    "workbench.colorTheme": "Ayu Dark",
+    "workbench.colorTheme": "Nord",
     "editor.lineNumbers": "relative",
+    "java.semanticHighlighting.enabled": true,
+}
