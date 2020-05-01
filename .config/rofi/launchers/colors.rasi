@@ -19,4 +19,4 @@
  *
  */
 
-@import "../themes/colorschemes/adapta.rasi"
+@import "../themes/colorschemes/arc-dark.rasi"
