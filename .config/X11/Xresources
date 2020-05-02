@@ -35,7 +35,12 @@ UXTerm*savelines: 1000
 UXTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
 
 ! colors
-#include"solarized-dark"
+#include"nord"
+
+! special
+*.foreground: fg
+*.background: bg
+*.cursorColor: cscol
 
 UXTerm*foreground: fg
 UXTerm*background: bg
@@ -44,6 +49,10 @@ UXTerm*cursorColor: cscol
 XTerm*foreground: fg
 XTerm*background: bg
 XTerm*cursorColor: cscol
+
+! for nord
+*fading: 35
+*fadeColor: fdcol
 
 ! black
 *.color0:       col0
