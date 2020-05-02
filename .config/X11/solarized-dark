@@ -1,0 +1,36 @@
+! special
+#define fg   #93a1a1
+#define bg   #002b36
+#define cscol  #93a1a1
+
+! black
+#define col0       #002b36
+#define col8       #657b83
+
+! red
+#define col1       #dc322f
+#define col9       #dc322f
+
+! green
+#define col2       #859900
+#define col10      #859900
+
+! yellow
+#define col3       #b58900
+#define col11      #b58900
+
+! blue
+#define col4       #268bd2
+#define col12      #268bd2
+
+! magenta
+#define col5       #6c71c4
+#define col13      #6c71c4
+
+! cyan
+#define col6       #2aa198
+#define col14      #2aa198
+
+! white
+#define col7       #93a1a1
+#define col15      #fdf6e3
