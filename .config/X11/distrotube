@@ -1,0 +1,29 @@
+! distrotube old colors
+! special
+# define fg #bbc5ff
+# define bg #292d3e
+# define cscol #bbc5ff
+! black
+#define col0       #101010
+#define col8       #434758
+! red
+#define col1       #f07178
+#define col9       #ff8b92
+! green
+#define col2       #c3e88d
+#define col10      #ddffa7
+! yellow
+#define col3       #ffcb6b
+#define col11      #ffe585
+! blue
+#define col4       #82aaff
+#define col12      #9cc4ff
+! magenta
+#define col5       #c792ea
+#define col13      #e1acff
+! cyan
+#define col6       #89ddff
+#define col14      #a3f7ff
+! white
+#define col7       #d0d0d0
+#define col15      #ffffff
