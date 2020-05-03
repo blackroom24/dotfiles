@@ -9,10 +9,10 @@
     "terminal.integrated.fontWeight": "600",
     "window.zoomLevel": 1,
     "python.pythonPath": "/usr/bin/python",
-    "python.formatting.provider": "black",
+    "python.formatting.provider": "autopep8",
     "editor.formatOnSave": true,
     "python.linting.enabled": true,
-    "python.linting.pylintEnabled": true,
+    "python.linting.pylintEnabled": false,
     "code-runner.executorMap": {
         "python": "$pythonPath -u $fullFileName"
     },
@@ -38,15 +38,9 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.configuration.checkProjectSettingsExclusions": false,
     "explorer.confirmDelete": false,
-    "vim.leader": "<space>",
-    "vim.handleKeys": {
-        "<C-a>": false,
-        "<C-f>": false
-    },
-    "vim.incsearch": true,
-    "vim.hlsearch": true,
-    "vim.ignorecase": false,
-    "workbench.colorTheme": "Nord",
     "editor.lineNumbers": "relative",
     "java.semanticHighlighting.enabled": true,
+    "python.linting.flake8Enabled": true,
+    "python.jediEnabled": false,
+    "workbench.colorTheme": "Nord",
 }

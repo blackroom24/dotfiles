@@ -3,8 +3,21 @@
 " \ \ / / | '_ \| | __|
 "  \ V /| | | | | | |_
 "   \_/ |_|_| |_|_|\__|
-set nocompatible
 let mapleader = ";"
+" Split Navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+" welcome to the fold
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+" Buffer Navigation
+noremap <leader><tab> :b#<CR>
+noremap <leader>d :bd <CR>
+noremap <leader>b :buffers <CR>:b<space>
 " installs vim-plug if not found
 if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
     echo "Downloading vim-plug"
@@ -16,22 +29,29 @@ endif
 filetype off
 call plug#begin('~/.config/nvim/plugged')
 " essentials
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-commentary'
-    Plug 'michaeljsmith/vim-indent-object'
-    Plug 'kana/vim-textobj-user'
-    Plug 'kana/vim-textobj-entire'
-    Plug 'kana/vim-textobj-line'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-line'
+" code
+Plug 'chiel92/vim-autoformat'
+Plug 'dense-analysis/ale'
+" utility
+Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
+Plug '/usr/bin/fzf'
+Plug 'junegunn/fzf.vim'
 " ui specific
-    Plug 'ayu-theme/ayu-vim' " used when i am edgy
-    " Plug 'rakr/vim-one' " used by onehalfdark term
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
+Plug 'ayu-theme/ayu-vim' " used when i am edgy
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 filetype plugin indent on
 " Basic Settings
+set nocompatible
 syntax on
 set encoding=utf-8
 set number relativenumber
@@ -75,14 +95,33 @@ colorscheme ayu
 set cursorline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:ale_set_highlights = 0
 " Searching
 set hlsearch
 set incsearch
 set smartcase
 set showmatch
 noremap <leader><space> :let @/=''<CR>
+" ale
+let g:ale_lint_on_enter = 0
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 'never'
 " Make tags
 command! MakeTags !ctags -R .
+" Vim Hexokinase
+let g:Hexokinase_refreshEvents = ['InsertLeave']
+let g:Hexokinase_optInPatterns = [
+            \     'full_hex',
+            \     'triple_hex',
+            \     'rgb',
+            \     'rgba',
+            \     'hsl',
+            \     'hsla',
+            \     'colour_names'
+            \ ]
+let g:Hexokinase_highlighters = ['backgroundfull']
+" Reenable hexokinase on enter
+autocmd VimEnter * HexokinaseTurnOn
 " Return Cursor on last edit
 augroup line_return
     autocmd!
@@ -103,31 +142,18 @@ augroup remove_trailing_whitespace
 augroup END
 " Some Lang specific commands
 autocmd BufNewFile,BufRead *.py " making sure it is pep8 compliant
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
-    \ set autoindent |
-    \ set fileformat=unix
+            \ set tabstop=4 |
+            \ set softtabstop=4 |
+            \ set shiftwidth=4 |
+            \ set textwidth=79 |
+            \ set expandtab |
+            \ set autoindent |
+            \ set fileformat=unix
 autocmd BufNewFile,BufRead *.js,*.html,*.css
-    \ set tabstop=2 |
-    \ set softtabstop=2 |
-    \ set shiftwidth=2
-" Split Navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-" welcome to the fold
-noremap <Up> <Nop>
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
-" Buffer Navigation
-noremap <leader><tab> :b#<CR>
-noremap <leader>d :bd <CR>
-noremap <leader>b :buffers <CR>:b<space>
+            \ set tabstop=2 |
+            \ set softtabstop=2 |
+            \ set shiftwidth=2
+autocmd Bufwrite *.py Autoformat
 " vimdiff
 if &diff
     highlight! link DiffText MatchParen
