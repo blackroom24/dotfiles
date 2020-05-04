@@ -140,7 +140,7 @@ def get_group_names():
     return [
         ("1", {"layout": "monadtall"}),
         ("2", {"layout": "monadtall"}),
-        ("3", {"layout": "max"}),
+        ("3", {"layout": "monadtall"}),
         ("4", {"layout": "monadtall"}),
         ("5", {"layout": "monadtall"}),
         ("6", {"layout": "floating"}),
