@@ -209,6 +209,9 @@ map <leader>k <C-w>k
 map <leader>l <C-w>l
 " clear highlighted search
 noremap <silent><leader><space> :let @/=''<CR>
+" Normal mode
+imap ,. <ESC>
+vmap ,. <ESC>
 " Resize splits
 nnoremap <silent><Up> :resize +2<CR>
 nnoremap <silent><Down> :resize -2<CR>

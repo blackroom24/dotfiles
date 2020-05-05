@@ -56,23 +56,6 @@ mcd() {
     mkdir -pv $1
     cd $1
 }
+
 maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 makezip() { zip -r "${1%%/}.zip" "$1" ; }
-
-# canbe dry
-hub-ssh() {
-    if [ -z $SSH_AGENT_PID ]; then
-        eval "$(ssh-agent -s)"
-        ssh-add "$HOME/.ssh/id_hub04"
-    else
-        ssh-add "$HOME/.ssh/id_hub04"
-    fi
-}
-lab-ssh() {
-    if [ -z $SSH_AGENT_PID ]; then
-        eval "$(ssh-agent -s)"
-        ssh-add "$HOME/.ssh/id_lab04"
-    else
-        ssh-add "$HOME/.ssh/id_lab04"
-    fi
-}
