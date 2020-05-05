@@ -29,4 +29,4 @@ export LESS_TERMCAP_se="$(printf '%b' '')"
 export LESS_TERMCAP_so=$(printf '\e[01;33m')
 export LESS_TERMCAP_us="$(printf '%b' '')"
 export LESS_TERMCAP_ue="$(printf '%b' '')"
-# export _JAVA_AWT_WM_NONREPARENTING=1 # for dwm or xmonad
+export _JAVA_AWT_WM_NONREPARENTING=1 # for dwm or xmonad
