@@ -6,11 +6,14 @@
 
 userresources=$HOME/.config/X11/Xresources
 usermodmap=$HOME/.config/X11/Xmodmap
+xprofile=$HOME/.xprofile
 
 [ -f "$userresources" ] && xrdb -merge "$userresources"
 
 [ -f "$usermodmap" ] && xmodmap "$usermodmap"
 
-exec openbox-session
-# exec dwm
+[ -f "$xprofile" ] && . "$xprofile"
+
+# exec openbox-session
+exec dwm
 # exec awesome

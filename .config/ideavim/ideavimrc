@@ -52,4 +52,4 @@ vmap ,. <ESC>
 noremap <leader>rc :<C-u>action ChooseRunConfiguration<CR>
 noremap <leader><leader> :<C-u>action Run<CR>
 " useful
-noremap cre:<C-u>action RenameElement<CR>
+noremap cre :<C-u>action RenameElement<CR>

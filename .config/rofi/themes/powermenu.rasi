@@ -30,7 +30,7 @@
 /* ########### */
 
 #window {
-  width: 29%;
+  width: 10%;
   height: 20%;
 }
 
@@ -121,4 +121,3 @@ element.selected.active {
 element.selected.active {
   border-color: @accent;
 }
-
