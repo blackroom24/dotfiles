@@ -10,11 +10,11 @@ alias \
 	diff="diff --color=auto" \
     cp='cp -iv' \
     rm='rm -iv' \
-    baty='cat /sys/class/power_supply/BAT?/capacity'\
     mv='mv -iv' \
     mkdir='mkdir -pv' \
     more='less' \
-    vi='vim' \
+    vi='nvim' \
+    vim='nvim' \
     df='df -h' \
     free='free -m' \
     wget='wget -c'
@@ -24,18 +24,7 @@ alias \
     e='$EDITOR' \
     v='$EDITOR' \
     p='sudo pacman' \
-    y='yay' \
-    pi='sudo pacman -Syu' \
-    yb='yay -Syu' \
-    prm='sudo pacman -Rs' \
-    yrm='yay -Rs' \
-    pq='sudo pacman -Ss' \
-    yq='yay -Ss' \
-    pkg='pacman -Qs' \
-    prr='sudo pacman -R' \
-    yrr='yay -R' \
-    yc='yay -Sc' \
-    pkgs='pacman -Q | less'
+    y='yay'
 
 # Ease of life
 alias \
@@ -59,3 +48,8 @@ mcd() {
 
 maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
 makezip() { zip -r "${1%%/}.zip" "$1" ; }
+
+update() {
+    sudo pacman -Syu &&
+        yay -Sua
+}
