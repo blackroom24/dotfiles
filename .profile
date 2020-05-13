@@ -23,3 +23,6 @@ export PYTHONSTARTUP="${XDG_CONFIG_HOME:-$HOME/.config}/python/pythonstartup.py"
 export LESS=-R
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
 export _JAVA_AWT_WM_NONREPARENTING=1 # For Non-reparenting wms like dwm or xmonad
+
+# Start graphical server on tty1 if not already running.
+[ "$(tty)" = "/dev/tty1" ] && ! ps -e | grep -qw Xorg && exec startx

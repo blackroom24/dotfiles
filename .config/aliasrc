@@ -9,7 +9,7 @@ alias \
 	grep="grep --color=auto" \
 	diff="diff --color=auto" \
     cp='cp -iv' \
-    rm='rm -iv' \
+    rm='rm -vI' \
     mv='mv -iv' \
     mkdir='mkdir -pv' \
     more='less' \

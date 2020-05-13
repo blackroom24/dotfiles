@@ -7,6 +7,5 @@ xprofile="$HOME/.config/X11/xprofile"
 [ -f "$usermodmap" ] && xmodmap "$usermodmap"
 [ -f "$xprofile" ] && . "$xprofile"
 
-
 # start wm
 exec dwm
