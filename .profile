@@ -5,9 +5,8 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="chromium"
 export TERMINAL="kitty"
-# export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
 export PAGER="less"
-export QT_QPA_PLATFORMTHEME="gtk3"
+export QT_QPA_PLATFORMTHEME="gtk2"
 # Cleanup
 export XDG_CACHE_HOME="$HOME/.cache"
 export XDG_CONFIG_HOME="$HOME/.config"
@@ -23,4 +22,4 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 export PYTHONSTARTUP="${XDG_CONFIG_HOME:-$HOME/.config}/python/pythonstartup.py"
 export LESS=-R
 export FZF_DEFAULT_OPTS="--layout=reverse --height 40%"
-# export _JAVA_AWT_WM_NONREPARENTING=1 # for dwm & xmonad
+export _JAVA_AWT_WM_NONREPARENTING=1 # For Non-reparenting wms like dwm or xmonad
