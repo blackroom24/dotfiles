@@ -5,6 +5,7 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="chromium"
 export TERMINAL="kitty"
+# export MANPAGER="/bin/sh -c \"col -b | vim --not-a-term -c 'set ft=man ts=8 nomod nolist noma' -\""
 export PAGER="less"
 export QT_QPA_PLATFORMTHEME="gtk3"
 # Cleanup
