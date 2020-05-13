@@ -1,5 +1,0 @@
-#!/bin/sh
-
-date=$(date '+%H:%M')
-icon=''
-printf "%s\\n" "^c#2e3440^^b#a3be8c^ $icon ^ d^^c#a3be8c ^ $date"
