@@ -57,6 +57,8 @@ Plug '/usr/bin/fzf'
 Plug 'junegunn/fzf.vim'
 " ui specific plugins
 Plug 'ayu-theme/ayu-vim' " used when i am edgy
+Plug 'rakr/vim-one'
+Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
