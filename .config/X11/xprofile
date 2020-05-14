@@ -5,6 +5,6 @@ dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XA
 nitrogen --restore & # restore wallpaper
 picom & # compositor
 dunst & # notfication daemon
-# dwmblocks & # dwm status bar
+dwmblocks & # dwm status bar
 xset r rate 300 50 &
 unclutter & # hide cursor
