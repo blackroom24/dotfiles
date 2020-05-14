@@ -8,4 +8,6 @@ xprofile="$HOME/.config/X11/xprofile"
 [ -f "$xprofile" ] && . "$xprofile"
 
 # start wm
+# exec bspwm
+# exec xmonad
 exec dwm
