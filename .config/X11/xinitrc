@@ -1,4 +1,5 @@
 #! /bin/sh
+
 userresources="$HOME/.config/X11/Xresources"
 usermodmap="$HOME/.config/X11/Xmodmap"
 xprofile="$HOME/.config/X11/xprofile"
@@ -7,6 +8,7 @@ xprofile="$HOME/.config/X11/xprofile"
 [ -f "$usermodmap" ] && xmodmap "$usermodmap"
 [ -f "$xprofile" ] && . "$xprofile"
 
+nvidia-settings --load-config-only
 # start wm
 # exec bspwm
 # exec xmonad
