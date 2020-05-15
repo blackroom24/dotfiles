@@ -16,6 +16,6 @@ xidlehook \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1; lock.sh' \
     '' \
   `# Finally, suspend an hour after it locks` \
-  --timer 3600 \
+  --timer 600 \
     'systemctl suspend' \
     ''

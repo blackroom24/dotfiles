@@ -16,6 +16,7 @@ export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # only when using startx or xini
 export XINITRC="${XDG_CONFIG_HOME:-$HOME/.config}/X11/xinitrc"
 export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 export GOPATH="${XDG_DATA_HOME:-$HOME/.local/share}/go"
+export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
 export GRADLE_USER_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/gradle"
 export GTK2_RC_FILES="${XDG_CONFIG_HOME:-$HOME/.config}/gtk-2.0/gtkrc-2.0"
 export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
