@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+status=$(cat /sys/class/net/w*/operstate)
+
+if [ $status == down ]; then
+    wifiicon=""
+    essid="offline"
+else
+    essid=$(nmcli | grep "connected" | awk '{print $4}')
+    wifiicon=""
+fi
+
+printf "%s\\n" "^c#2e3440^^b#bf616a^ $wifiicon ^ d^^c#bf616a ^ $essid"
