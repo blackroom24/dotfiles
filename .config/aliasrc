@@ -41,15 +41,15 @@ alias \
     rbt='reboot'
 
 # functions
-mcd() {
+mcd () {
     mkdir -pv $1
     cd $1
 }
 
-maketar() { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
-makezip() { zip -r "${1%%/}.zip" "$1" ; }
+maketar () { tar cvzf "${1%%/}.tar.gz"  "${1%%/}/"; }
+makezip () { zip -r "${1%%/}.zip" "$1" ; }
 
-update() {
+update () {
     sudo pacman -Syu &&
         yay -Sua
 }

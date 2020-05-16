@@ -1,5 +1,5 @@
 [Added Associations]
-text/plain=nvim.desktop;
+text/plain=text.desktop;nvim.desktop;
 application/x-shellscript=nvim.desktop;
 image/png=viewnior.desktop;
 

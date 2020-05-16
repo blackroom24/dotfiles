@@ -7,7 +7,7 @@ export PRIMARY_DISPLAY="$(xrandr | awk '/ primary/{print $1}')"
 xidlehook \
   `# Don't lock when there's audio playing` \
   --not-when-audio \
-  `# Dim the screen after 60 seconds, undim if user becomes active` \
+  `# Dim the screen after 300 seconds, undim if user becomes active` \
   --timer 300 \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness .1' \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1' \
@@ -15,7 +15,7 @@ xidlehook \
   --timer 10 \
     'xrandr --output "$PRIMARY_DISPLAY" --brightness 1; lock.sh' \
     '' \
-  `# Finally, suspend an hour after it locks` \
+  `# Finally, suspend 10 min after it locks` \
   --timer 600 \
     'systemctl suspend' \
     ''

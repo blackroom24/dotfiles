@@ -4,7 +4,7 @@ export PATH="$PATH:$(du "$HOME/.local/bin/" | cut -f2 | tr '\n' ':' | sed 's/:*$
 export EDITOR="nvim"
 export VISUAL="nvim"
 export BROWSER="chromium"
-export TERMINAL="kitty"
+export TERMINAL="termite"
 export PAGER="less"
 export QT_QPA_PLATFORMTHEME="gtk2"
 # Cleanup
