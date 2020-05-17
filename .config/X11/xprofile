@@ -2,10 +2,10 @@
 
 # Flatpaks and GNOME apps
 dbus-update-activation-environment --systemd DBUS_SESSION_BUS_ADDRESS DISPLAY XAUTHORITY
-nitrogen --restore & # restore wallpaper
 picom & # compositor
-hook.sh & # Test
+hook.sh & # lockscreen using betterlockscreen
+randwall & # random wallpaper using feh
 dunst & # notfication daemon
 dwmblocks & # dwm status bar
 xset r rate 300 50 &
-unclutter & # hide cursor
+unclutter & # hide cursor when inactive

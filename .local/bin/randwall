@@ -1,0 +1,7 @@
+#!/bin/sh
+
+feh --bg-fill --randomize --no-fehbg ~/Pictures/wallpapers/*
+
+while sleep 1800; do
+    feh --bg-fill --randomize --no-fehbg ~/Pictures/wallpapers/*
+done
