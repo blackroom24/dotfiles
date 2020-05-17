@@ -8,7 +8,6 @@ xprofile="$HOME/.config/X11/xprofile"
 [ -f "$usermodmap" ] && xmodmap "$usermodmap"
 [ -f "$xprofile" ] && . "$xprofile"
 
-nvidia-settings --load-config-only
 # start wm
 # exec bspwm
 # exec xmonad
