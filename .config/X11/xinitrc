@@ -12,3 +12,4 @@ xprofile="$HOME/.config/X11/xprofile"
 # exec bspwm
 # exec xmonad
 exec dwm
+# ssh-agent dwm

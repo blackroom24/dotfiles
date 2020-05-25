@@ -2,8 +2,10 @@
 text/plain=text.desktop;nvim.desktop;
 application/x-shellscript=nvim.desktop;
 image/png=viewnior.desktop;
+audio/mpeg=nvim.desktop;ario.desktop;rhythmbox.desktop;
 
 [Default Applications]
 text/plain=nvim.desktop
 application/x-shellscript=nvim.desktop
 image/png=viewnior.desktop
+audio/mpeg=rhythmbox.desktop

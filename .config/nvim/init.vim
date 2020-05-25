@@ -51,6 +51,7 @@ Plug 'kana/vim-textobj-line'
 " code specific
 Plug 'chiel92/vim-autoformat'
 Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'sheerun/vim-polyglot'
 " utility plugins
 Plug 'rrethy/vim-hexokinase', { 'do': 'make hexokinase' }
@@ -59,6 +60,7 @@ Plug 'junegunn/fzf.vim'
 " ui specific plugins
 Plug 'ayu-theme/ayu-vim' " used when i am edgy
 Plug 'rakr/vim-one'
+Plug 'whatyouhide/vim-gotham'
 Plug 'morhetz/gruvbox'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -110,10 +112,15 @@ set smartcase
 
 set autoread
 set autowrite
+set nobackup
+set nowritebackup
+set shortmess+=c
+set signcolumn=yes
 set scrolloff=3
 set backspace=indent,eol,start
 set nomodeline
 set hidden
+set updatetime=300
 set lazyredraw
 set conceallevel=0
 set ttyfast
@@ -130,7 +137,7 @@ if (empty($TMUX))
     endif
 endif
 set background=dark
-colorscheme ayu
+colorscheme gotham
 set cursorline
 highlight Comment cterm=italic
 "=================================================================================================================

@@ -13,6 +13,7 @@ stty stop undef
 #  Prompt
 fpath+=$ZDOTDIR/pure
 autoload -U promptinit; promptinit
+zstyle :prompt:pure:git:stash show yes
 prompt pure
 
 # Aliasrc
